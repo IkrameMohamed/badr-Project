@@ -1,0 +1,4 @@
+.ui-autocomplete {
+    position: absolute;
+    z-index: 1510 !important;
+}

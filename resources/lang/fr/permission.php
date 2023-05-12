@@ -1,0 +1,31 @@
+<?php
+
+return array(
+
+    'add_roles' => 'Ajouter des rôles',
+    'add_users' => 'Ajouter des utilisateurs',
+    'all_users' => 'Tous les utilisateurs',
+    'delete_roles' => 'Supprimer des rôles',
+    'delete_users' => 'Supprimer des utilisateurs',
+    'permission' => 'Autorisations',
+    'reset_permission' => 'Réinitialiser les autorisations',
+    'roles' => 'rôles',
+    'settings' => 'Paramètres',
+    'standard_report' => 'Rapport standard',
+    'translations' => 'Traductions',
+    'update_permissions_successfully' => 'Autorisations mises à jour avec succès',
+    'update_roles' => 'Mettre à jour les rôles',
+    'update_roles_permissions' => 'Mettre à jour les autorisations des rôles',
+    'update_settings' => 'Mettre à jour les paramètres',
+    'update_users' => 'Mettre à jour les utilisateurs',
+    'update_users_permissions' => 'Mettre à jour les autorisations des utilisateurs',
+    'update_users_roles' => 'Mettre à jour les rôles des utilisateurs',
+    'view_permissions' => 'Voir les autorisations',
+    'medicines' => 'medicines',
+    'add_medicines' => 'add medicines',
+    'update_medicines' => 'update medicines',
+    'delete_medicines' => 'delete medicines',
+    'import_medicines' => 'import medicines',
+    'export_medicines' => 'export medicines',
+    'search' => 'search',
+);

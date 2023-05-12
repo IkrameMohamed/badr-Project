@@ -1,0 +1,90 @@
+
+/* Parsley CSS */
+
+.parsley-error {
+    color: #B94A48;
+    background-color: #F2DEDE;
+    border: 1px solid #EED3D7;
+}
+
+.parsley-errors-list {
+    margin: 2px 0 3px;
+    padding: 0;
+    list-style-type: none;
+    font-size: 0.9em;
+    line-height: 0.9em;
+    opacity: 0;
+    color: #B94A48;
+    transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    margin-top: 7px;
+}
+
+.parsley-errors-list.filled {
+    opacity: 1;
+}
+
+/* use image */
+
+.user_image {
+    max-width: 500px!important;
+    max-height: 100px!important;
+}
+
+.mw-50 {
+    max-width: 50% !important;
+}
+
+.mw-75 {
+    max-width: 75% !important;
+}
+
+@media (min-width: 992px){
+
+    .modal-mw-75{
+        max-width: 75% !important;
+    }
+}
+
+@media (max-width: 992px){
+
+    .modal-mw-75{
+        max-width: 100% !important;
+    }
+}
+
+.mmw-200 {
+    min-width: 200px !important;
+}
+
+.mmw-600 {
+    min-width: 600px !important;
+}
+.cursor-pointer{
+    max-width: 20px !important;
+}
+
+@media (min-width: 767px) {
+    .hidden-icon {
+        display: none !important; }
+}
+.page_content{
+    height: 100vh;
+}
+
+
+.text-green{fill:#38c172}
+.text-red{fill:#e3342f}
+.select-group .caret svg{fill:#38c172;height:1rem;width:1rem}
+textarea{width:90%;border-radius:.25rem;padding:.5rem;border:1px solid #b8c2cc}
+textarea.active{width:100%;border-radius:.25rem;height:8rem;padding:.5rem;border:1px solid #b8c2cc}
+
+html[dir="rtl"] .bootstrap-select .dropdown-toggle .filter-option {
+
+    text-align: right!important;
+}
+.topbar .top-navbar .navbar-nav > .nav-item > .nav-link i {
+    font-size: 25px;
+}
