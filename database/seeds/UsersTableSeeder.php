@@ -21,7 +21,7 @@ class UsersTableSeeder extends Seeder
             'name'  => 'ahlame',
             'email'      => 'ahlame@gmail.com',
             'password'   => \Hash::make('321'),
-            'role_id'   => '1',
+            'role_id'   => '2',
         ]);
     }
 }

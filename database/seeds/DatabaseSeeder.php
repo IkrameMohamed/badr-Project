@@ -17,9 +17,6 @@ class DatabaseSeeder extends Seeder
         $this->call(PermissionSeeder::class);
         $this->call(PermissionRoleSeeder::class);
         $this->call(PermissionUserSeeder::class);
-        $this->call(ImportationTableSeeder::class);
-        $this->call(ImportationTableFieldSeeder::class);
-        $this->call(ImportationTableFkFieldSeeder::class);
         $this->call(DoctorsTableSeeder::class);
         $this->call(VisitTypesTableSeeder::class);
         $this->call(DoctorVisitTypeTableSeeder::class);

@@ -3,7 +3,7 @@ let dataTableAppointment,
     data_list_appointments  = {
         "_token": $('[name="_token"]').val()
     },
-    visitTypesDoctors;
+    visitTypesDoctors,globalDoctors=[];
 
 $(document).ready(function () {
     reload_datatable();
@@ -15,6 +15,11 @@ $(document).ready(function () {
 
     $("#formCreateAppointment [name='appointment_date']").on('change', function() {
         dateValidation($("#formCreateAppointment"));
+    });
+
+    $("#formCreateAppointment [name='doctor']").on('change', function() {
+        updateDiscountDoctorNameById($(this).find(":selected").val() );
+
     });
 });
 
@@ -49,6 +54,16 @@ function reload_datatable() {
             "data": "appointment_date", "orderable": false, "searchable": false,
             "render": function (data, type, row) {
                 return row['user']['name'];
+            }
+        },
+
+        {
+            "data": "appointment_date", "orderable": false, "searchable": false,
+            "render": function (data, type, row) {
+                if(row['checked'] == 1)
+
+                return ` <div class="form-group"><label className="switch"> <input type="checkbox" checked disabled/> <div className="slider"></div></label></div>` ;
+                return ` <div class="form-group"><label className="switch"> <input type="checkbox" disabled/> <div className="slider"></div></label></div>` ;
             }
         },
         {"data": "created_at"},
@@ -102,6 +117,9 @@ function getDoctorsByVisitType(selector ,visitTypeId, field_selected = false) {
           });
       }
     });
+
+    globalDoctors = doctors;
+
     let opt = '', lastField;
     $.each(doctors, function (index, doctor) {
         opt += `<option  value="${doctor['id']}">${doctor['name']}</option>`;
@@ -109,9 +127,24 @@ function getDoctorsByVisitType(selector ,visitTypeId, field_selected = false) {
     });
     selector.find("[name='doctor']").html(opt).selectpicker('refresh');
     let selected = (field_selected) ? field_selected : lastField ;
+
+       this.updateDiscountDoctorNameById(selected);
+
+
+
     selector.find("[name='doctor']").selectpicker('val', selected);
 
+}
 
+function updateDiscountDoctorNameById(id){
+if(globalDoctors.length == 0 )
+    $(".doctor_discount").text( "");
+
+    $.each(globalDoctors, function (index, doctor) {
+        console.log(globalDoctors,id)
+        if(doctor['id'] == id)
+            $(".doctor_discount").text( "Promotion " + doctor['discount']  + " %");
+    });
 }
 
 $("#genericDeleteModal form").on('submit', function (e) {

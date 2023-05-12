@@ -26,6 +26,7 @@
             <th>@lang('global.visit_type')</th>
             <th>@lang('global.doctor_name')</th>
             <th>@lang('global.user')</th>
+            <th>@lang('global.checked')</th>
             <th>@lang('global.created_at')</th>
             <th class="noExport all">@lang('global.action')</th>
         </tr>
@@ -48,8 +49,8 @@
     var permission_translation = JSON.parse(`{{readLangFle('permission' ,false)}}`.replace(/(&quot\;)/g, "\""));
 
     var appointmentPermission = {
-        update_users: @can('delete_appointments')  true @else false @endcan,
-        delete_users: @can('checked_appointments')  true @else false @endcan,
+        delete_appointments: @can('delete_appointments')  true @else false @endcan,
+        checked_appointments: @can('checked_appointments')  true @else false @endcan,
     }
     </script>
     <script src="{{asset('plugins/jquery-ui-1.12.1/jquery-ui.min.js')}}"></script>

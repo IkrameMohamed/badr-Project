@@ -19,8 +19,13 @@ class PermissionRoleSeeder extends Seeder
             PermissionRole::create(['permission_id'=>$permission->id,'role_id'=>1]);
             // role - 2 admin
             PermissionRole::create(['permission_id'=>$permission->id,'role_id'=>2]);
+
+
         }
 
+
+        PermissionRole::create(['permission_id'=>10,'role_id'=>3]);
+        PermissionRole::create(['permission_id'=>11,'role_id'=>3]);
 
 
 

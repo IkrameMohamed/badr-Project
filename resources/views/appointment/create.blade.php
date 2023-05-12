@@ -23,7 +23,7 @@
 
 
                 <div class="form-group row ">
-                    <label class="col-sm-4 control-label col-form-label">@lang('global.role')</label>
+                    <label class="col-sm-4 control-label col-form-label">@lang('global.visit_type')</label>
                     <div class="col-sm-8">
                         <select class="selectpicker show-tick" data-live-search="true" name="visit_type" data-parsley-required ></select>
                     </div>
@@ -32,9 +32,16 @@
 
 
                 <div class="form-group row ">
-                    <label class="col-sm-4 control-label col-form-label">@lang('global.role')</label>
+                    <label class="col-sm-4 control-label col-form-label">@lang('global.doctor')</label>
                     <div class="col-sm-8">
                         <select class="selectpicker show-tick" data-live-search="true" name="doctor" data-parsley-required ></select>
+                    </div>
+                </div>
+
+                <div class="form-group row ">
+                    <label class="col-sm-4 control-label col-form-label"></label>
+                    <div class="col-sm-8">
+                       <span class="doctor_discount"> </span>
                     </div>
                 </div>
 
