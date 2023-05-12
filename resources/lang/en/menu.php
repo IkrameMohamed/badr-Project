@@ -19,5 +19,6 @@ return array (
   'settings' => 'Settings',
   'standard_report' => 'Standard report',
   'translations' => 'Translation',
-    'search' =>'search'
+    'search' =>'search',
+    'appointments'=>'appointments'
 );

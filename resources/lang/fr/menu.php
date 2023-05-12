@@ -5,6 +5,7 @@ return array (
   'all_forms' => 'Toutes les templates',
   'all_receipts' => 'Tous les formulaires',
   'all_users' => 'Toutes les utilisateurs',
+  'appointments' => 'appointments',
   'audits' => 'Audits ',
   'dashboard' => 'Tableau de bord',
   'manage_customers' => 'Gérer les clients',
@@ -16,8 +17,8 @@ return array (
   'manage_users' => 'Gérer les utilisateurs',
   'medicines' => 'Medicine',
   'roles' => 'Roles',
+  'search' => 'Recherche',
   'settings' => 'Paramètres',
   'standard_report' => 'Rapport standard',
   'translations' => 'Traductions',
-    'search' =>'Recherche'
 );

@@ -22,26 +22,17 @@ class PermissionSeeder extends Seeder
         Permission::create(['name'  => 'update_roles','permission_menu_id'=>'1']);
         Permission::create(['name'  => 'delete_roles','permission_menu_id'=>'1']);
 
-        Permission::create(['name'  => 'medicines','permission_menu_id'=>'4']);
-        Permission::create(['name'  => 'add_medicines','permission_menu_id'=>'4']);
-        Permission::create(['name'  => 'update_medicines','permission_menu_id'=>'4']);
-        Permission::create(['name'  => 'delete_medicines','permission_menu_id'=>'4']);
-        Permission::create(['name'  => 'search','permission_menu_id'=>'4']);
-        Permission::create(['name'  => 'import_medicines','permission_menu_id'=>'4']);
-        Permission::create(['name'  => 'export_medicines','permission_menu_id'=>'4']);
+        Permission::create(['name'  => 'appointments','permission_menu_id'=>'4']);
+        Permission::create(['name'  => 'add_appointments','permission_menu_id'=>'4']);
+        Permission::create(['name'  => 'delete_appointments','permission_menu_id'=>'4']);
+        Permission::create(['name'  => 'checked_appointments','permission_menu_id'=>'4']);
         /* end manage_forms  */
         /* start manage_settings  */
-        Permission::create(['name'  => 'settings','permission_menu_id'=>'7']);
-        Permission::create(['name'  => 'update_settings','permission_menu_id'=>'7']);
+        Permission::create(['name'  => 'settings','permission_menu_id'=>'5']);
+        Permission::create(['name'  => 'update_settings','permission_menu_id'=>'5']);
         /* end manage_settings  */
 
-
-
-        Permission::create(['name'  => 'translations','permission_menu_id'=>'8']);
-
-
-
-
+        Permission::create(['name'  => 'translations','permission_menu_id'=>'6']);
 
     }
 }

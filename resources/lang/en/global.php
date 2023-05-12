@@ -66,5 +66,7 @@ return array (
   'valid' => 'valid',
   'view' => 'View',
   'ok' => 'Ok',
-    "menu"=> "menu"
+   "menu"=> "menu",
+   "date_appointment"=> "date appointment",
+    "checked_visit" =>"checked visit"
 );

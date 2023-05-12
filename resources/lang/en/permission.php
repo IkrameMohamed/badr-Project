@@ -30,4 +30,8 @@ return array(
     'import_medicines' => 'import medicines',
     'export_medicines' => 'export medicines',
     'search' => 'search',
+    'appointments' => 'appointments',
+    'add_appointments' => 'add_appointments',
+    'delete_appointments' => 'delete_appointments',
+    'checked_appointments' => 'checked_appointments',
 );

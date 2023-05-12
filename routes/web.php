@@ -105,3 +105,25 @@ Route::post('/medicines/advanceSearch', 'MedicineController@advanceSearch');
 
 Route::post('import', 'ImportationController@import')->name('import');
 Route::get('export/{table_name}', 'ImportationController@export')->name('export');
+
+
+
+
+/**
+ * +-------------------------
+ * | appointments
+ * +-------------------------
+ */
+Route::get('/appointments', 'AppointmentController@index');
+Route::post('/appointments/datatable', 'AppointmentController@datatable');
+Route::post('/appointments/create', 'AppointmentController@create');
+Route::post('/appointments/checkedAppointment', 'AppointmentController@checkedAppointment');
+Route::delete('/appointments/delete', 'AppointmentController@delete');
+
+/**
+ * +-------------------------
+ * | visit_types
+ * +-------------------------
+ */
+//Route::get('/visit_types', 'VisitTypeController@index');
+Route::post('/visit_types/doctors', 'VisitTypeController@doctors');
