@@ -68,5 +68,11 @@ return array (
   'ok' => 'Ok',
    "menu"=> "menu",
    "date_appointment"=> "date appointment",
-    "checked_visit" =>"checked visit"
+    "checked_visit" =>"checked visit",
+    "visit_type"=>"visit_type",
+    "doctor_name"=>"doctor_name",
+    "user"=>"user",
+    "checked"=>"checked",
+
+
 );

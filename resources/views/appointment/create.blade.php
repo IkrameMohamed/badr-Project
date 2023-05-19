@@ -14,10 +14,10 @@
 
 
                 <div class="form-group row">
-                    <label class="col-sm-4 control-label col-form-label">@lang('global.name')</label>
+                    <label class="col-sm-4 control-label col-form-label">@lang('global.date')</label>
                     <div class="col-sm-8">
                         <input type="date" name="appointment_date" class="form-control" data-parsley-required
-                               placeholder="@lang('user.enter_user_name')">
+                               placeholder="@lang('global.date')">
                     </div>
                 </div>
 

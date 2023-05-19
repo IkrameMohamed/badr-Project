@@ -168,17 +168,17 @@ function dateValidation(selector) {
     afterWeek.setDate(afterWeek.getDate() + 7);
 
     if (UserDate == undefined  ) {
-        showNotification('error', "The Date must be selected");
+        showNotification('error', "La date doit être sélectionnée");
         return false;
     }
 
     if (new Date(UserDate).getTime() <= ToDate.getTime() ) {
-        showNotification('error', "The Date must be Bigger or Equal to today date");
+        showNotification('error', "La date doit être supérieure ou égale à la date d'aujourd'hui");
         return false;
     }
 
     if (new Date(UserDate).getTime() > afterWeek.getTime()) {
-        showNotification('error', "The Date must be lower then " + afterWeek);
+        showNotification('error', "La date doit être inférieure à " + afterWeek);
         return false;
     }
     return true;

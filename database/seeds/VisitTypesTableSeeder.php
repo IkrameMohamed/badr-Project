@@ -13,13 +13,39 @@ class VisitTypesTableSeeder extends Seeder
     public function run()
     {
         VisitType::create([
-            'name'  => 'type_1'
+            'name'  => 'Scanner'
         ]);
         VisitType::create([
-            'name'  => 'type_2'
+            'name'  => 'IRM'
         ]);
         VisitType::create([
-            'name'  => 'type_3'
+            'name'  => 'Echographie'
         ]);
+        VisitType::create([
+            'name'  => 'Mamographie'
+        ]);
+        VisitType::create([
+            'name'  => 'Scientigraphie'
+        ]);
+        VisitType::create([
+            'name'  => 'Coloscopie'
+        ]);
+        VisitType::create([
+            'name'  => 'Rdiographie'
+        ]);
+        VisitType::create([
+            'name'  => 'Biopsie'
+        ]);
+        VisitType::create([
+            'name'  => 'Médecin généraliste'
+        ]);
+        VisitType::create([
+            'name'  => 'Médecin spécialiste'
+        ]);
+        VisitType::create([
+            'name'  => 'Labo et les analyses'
+        ]);
+
+
     }
 }

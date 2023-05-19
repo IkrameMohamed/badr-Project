@@ -127,3 +127,21 @@ Route::delete('/appointments/delete', 'AppointmentController@delete');
  */
 //Route::get('/visit_types', 'VisitTypeController@index');
 Route::post('/visit_types/doctors', 'VisitTypeController@doctors');
+
+
+
+
+
+/**
+ * +-------------------------
+ * | reservation
+ * +-------------------------
+ */
+Route::get('/reservations', 'ReservationController@index');
+Route::post('/houses', 'HouseController@houses');
+Route::post('/reservations/datatable', 'ReservationController@datatable');
+Route::delete('/reservations/delete', 'ReservationController@delete');
+Route::post('/beds/beds_available', 'BedController@beds_available');
+Route::post('/reservations/create', 'ReservationController@create');
+//Route::post('/appointments/checkedAppointment', 'AppointmentController@checkedAppointment');
+
