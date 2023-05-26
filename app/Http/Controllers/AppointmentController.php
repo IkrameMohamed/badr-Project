@@ -6,6 +6,8 @@ use App\Appointment;
 use App\Doctor;
 use App\Http\Requests\AppointmentRequest\AppointmentCreate;
 use App\Http\Requests\AppointmentRequest\AppointmentDelete;
+use App\Http\Requests\AppointmentRequest\ReservationCreate;
+use App\Http\Requests\AppointmentRequest\ReservationDelete;
 use App\Http\Requests\AppointmentRequest\CheckedAppointment;
 use App\Medicine;
 use App\Permission;
@@ -50,6 +52,10 @@ class AppointmentController extends Controller
      */
     public function index()
     {
+        if (Gate::allows('appointments') == false) {
+            redirect('/')->send();
+        }
+
         return view('appointment.index');
     }
 

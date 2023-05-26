@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\UserRequest\UserCreateWithoutLogin;
 use App\Permission;
 use App\Menu;
 use App\Role;
@@ -33,7 +34,7 @@ class UserController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+      //  $this->middleware('auth');
     }
 
     /**
@@ -49,6 +50,42 @@ class UserController extends Controller
         return view('user.index');
     }
 
+    public function registerPage()
+    {
+        return view('user.register-page');
+    }
+
+    /**
+     * creat user
+     * @param UserCreate $request
+     * @return array|\Illuminate\Http\JsonResponse
+     */
+    public function createWithoutLogin(UserCreateWithoutLogin $request)
+    {
+
+        $user = new User;
+        $user->name = $request->UserName;
+        $user->email = $request->UserEmail;
+        $user->last_name = $request->lastName;
+        $user->type = $request->type;
+        $user->phone = $request->phone;
+        $user->password = \Hash::make($request->UserPassword);
+        $user->active = 0;
+        $user->role_id = 3;
+        $user->save();
+        $path = public_path('assets/files/users/' . $user->id);
+        $this->updateUserRole(3, $user->id);
+
+        $this->createDirecrotory($path);
+        if ($file = $request->file('UserImage')) {
+            $file->move($path, 'profiel.jpg');
+        } else {
+            $this->moveDefaultImageTo($path . '/profiel.jpg');
+        }
+        return $this->returnSuccess('user.create_user_succesfuly');
+    }
+
+
     /**
      * creat user
      * @param UserCreate $request
@@ -60,6 +97,9 @@ class UserController extends Controller
         $user = new User;
         $user->name = $request->UserName;
         $user->email = $request->UserEmail;
+        $user->last_name = $request->lastName;
+        $user->type = $request->type;
+        $user->phone = $request->phone;
         $user->password = \Hash::make($request->UserPassword);
         $user->role_id = $request->allRoles;
         $user->save();
@@ -128,6 +168,9 @@ class UserController extends Controller
         $user = User::find($request->id);
         $user->name = $request->UserName;
         $user->email = $request->UserEmail;
+        $user->last_name = $request->lastName;
+        $user->type = $request->type;
+        $user->phone = $request->phone;
         //admin and sysadmin always active
         $user->active = ($request->UserActive || in_array($user->id, [1, 2])) ? 1 : 0;
         //disconnect inactive users except connected user

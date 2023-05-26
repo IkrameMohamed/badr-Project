@@ -5,7 +5,7 @@ namespace App\Http\Requests\UserRequest;
 use  App\Http\Requests\globalRequest;
 use Illuminate\Support\Facades\Gate;
 
-class UserCreate extends globalRequest
+class UserCreateWithoutLogin extends globalRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -14,7 +14,7 @@ class UserCreate extends globalRequest
      */
     public function authorize()
     {
-        return Gate::allows('add_users');
+        return true;
     }
 
     /**
@@ -26,7 +26,6 @@ class UserCreate extends globalRequest
     {
         return [
             'UserName'         => 'required|string|min:3|unique:users,name,NULL,id,deleted_at,NULL',
-            'allRoles'         => 'required|exists:roles,id,deleted_at,NULL|not_in:1',
             'UserEmail'        => 'required|email|unique:users,email,NUll',
             'type'           => 'required',
             'UserPassword'=>'required',

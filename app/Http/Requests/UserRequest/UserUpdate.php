@@ -28,6 +28,7 @@ class UserUpdate extends globalRequest
             'UserImage'      =>'mimes:png,jpg,jpeg',
             'UserName'      =>'required|string|min:3|unique:users,name,'.$this->id.',id,deleted_at,NULL',
             'UserEmail'      =>'required|email|unique:users,email,'.$this->id.',id',
+            'type'           => 'required',
             'allRoles'         => 'required|exists:roles,id,deleted_at,NULL|not_in:1',
         ];
     }

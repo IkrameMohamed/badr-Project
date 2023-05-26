@@ -76,7 +76,7 @@ function reload_datatable() {
                                          ${translate["action"]}
                                     </button>
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton" x-placement="bottom-start">`;
-
+                if (reservationPermission['delete_reservations'])
                     list += `<button class="dropdown-item genericDeleteModalBtn"  type="button" data-id='${row["id"]}' data-action='/reservations/delete'>
                                      <i class='fa fa-trash text-danger'></i> ${translate["delete"]}</button>`;
                  list += `</div>

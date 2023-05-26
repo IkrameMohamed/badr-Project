@@ -20,5 +20,6 @@ return array (
   'standard_report' => 'Standard report',
   'translations' => 'Translation',
     'search' =>'search',
-    'appointments'=>'appointments'
+    'appointments'=>'appointments',
+    'reservations' => 'reservations',
 );

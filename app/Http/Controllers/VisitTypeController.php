@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Appointment;
-use App\Http\Requests\AppointmentRequest\AppointmentCreate;
+use App\Http\Requests\AppointmentRequest\ReservationCreate;
 use App\Medicine;
 use App\Permission;
 use App\Menu;

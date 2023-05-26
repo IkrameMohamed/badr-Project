@@ -27,6 +27,22 @@
                 </div>
 
                 <div class="form-group row">
+                    <label class="col-sm-4 control-label col-form-label">@lang('global.last_name')</label>
+                    <div class="col-sm-8">
+                        <input type="text" name="lastName" class="form-control" data-parsley-required
+                               placeholder="@lang('user.lastName')">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-sm-4 control-label col-form-label">@lang('global.phone')</label>
+                    <div class="col-sm-8">
+                        <input type="text" name="phone" class="form-control" data-parsley-required
+                               placeholder="@lang('user.phone')">
+                    </div>
+                </div>
+
+                <div class="form-group row">
                     <label class="col-sm-4 control-label col-form-label">@lang('global.email')</label>
                     <div class="col-sm-8">
                         <input type="email" name="UserEmail" class="form-control" data-parsley-required
@@ -37,7 +53,17 @@
                 <div class="form-group row ">
                     <label class="col-sm-4 control-label col-form-label">@lang('global.role')</label>
                     <div class="col-sm-8">
-                        <select class="selectpicker show-tick" data-live-search="true" name="allRoles" data-parsley-required ></select>
+                        <select class="selectpicker show-tick" data-live-search="true" name="allRoles" data-parsley-required >
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group row ">
+                    <label class="col-sm-4 control-label col-form-label">@lang('global.type')</label>
+                    <div class="col-sm-8">
+                        <select class="selectpicker show-tick" data-live-search="true" name="type" data-parsley-required >
+
+                        </select>
                     </div>
                 </div>
                 <div class="form-group row">

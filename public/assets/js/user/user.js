@@ -8,21 +8,30 @@ $(document).ready(function () {
 
 
     reload_datatable();
+
     dataTableUser.on('click', 'tr .viewUser', function () {
         let form = $('#formViewUser'),
             row = $(this).parents('tr'),
             data = dataTableUser.row(row).data();
         reset_form(form);
         form.find('.dropUserImage').html(`<input type="file" name="UserImage" class="dropify"
-                               data-height="100" disabled
+                                disabled  data-height="750"
                                data-default-file="${asset}files/users/${data.id}/profiel.jpg">`);
         resetDropify(form.find('.dropify'));
-        if (data.id == 1 || data.id == 2)
+        if (data.id == 1 || data.id == 2){
             getRoleOption(form, data.role_id);
-        else
+
+        }
+
+        else{
             getRolesOption(form, data.role_id);
+            getType(form,data.type);
+        }
+
         form.find("[name='UserName']").val(data.name);
         form.find("[name='UserEmail']").val(data.email);
+        form.find("[name='lastName']").val(data.last_name);
+        form.find("[name='phone']").val(data.phone);
         form.find('[name="UserActive"]').prop("checked", data.active);
         $('#modalViewUser').modal('show');
     });
@@ -36,21 +45,25 @@ $(document).ready(function () {
 
         form.find("[name='id']").val(data.id);
         form.find('.dropUserImage').html(`<input type="file" name="UserImage" class="dropify"
-                               data-height="100"
+                               data-height="750"
                                data-default-file="${asset}files/users/${data.id}/profiel.jpg">`);
         resetDropify(form.find('.dropify'));
 
         if (data.id == 1 || data.id == 2){
             getRoleOption(form, data.role_id);
+            getType(form,data.type);
             form.find('[name="UserActive"]').prop("checked", data.active).attr('disabled',true);
         }
         else{
 
             getRolesOption(form, data.role_id);
+            getType(form,data.type);
             form.find('[name="UserActive"]').prop("checked", data.active).attr('disabled',false);
         }
         form.find("[name='UserName']").val(data.name);
         form.find("[name='UserEmail']").val(data.email);
+        form.find("[name='lastName']").val(data.last_name);
+        form.find("[name='phone']").val(data.phone);
         $('#modalUpdateUser').modal('show');
     });
 
@@ -78,6 +91,8 @@ function reload_datatable() {
             }
         },
         {"data": "name"},
+        {"data": "last_name"},
+        {"data": "phone"},
         {"data": "email", "className": "my_class"},
         {"data": "created_at", "visible": false},
         {
@@ -143,7 +158,8 @@ $("#genericDeleteModal form").on('submit', function (e) {
 
 $(".CreatUserBtn").on('click', function () {
     $("#formCreateUser")[0].reset();
-    getRolesOption($("#formCreateUser"))
+    getRolesOption($("#formCreateUser"));
+    getType($("#formCreateUser"));
 });
 
 function getRolesOption(selector, field_selected = false) {
@@ -159,6 +175,17 @@ function getRolesOption(selector, field_selected = false) {
             selector.find("[name='allRoles']").selectpicker('val', (field_selected) ? field_selected : lastField);
         }
     }).catch((err) => console.log(err));
+}
+
+function getType(selector, field_selected = false) {
+    let  opt = '', lastField;
+
+    opt += `<option  value="MEN">MEN</option>`;
+    opt += `<option  value="WOMEN">WOMEN</option>`;
+    lastField = 'MEN';
+
+    selector.find("[name='type']").html(opt).selectpicker('refresh');
+    selector.find("[name='type']").selectpicker('val', (field_selected) ? field_selected : lastField);
 }
 
 function getRoleOption(selector, roleId) {

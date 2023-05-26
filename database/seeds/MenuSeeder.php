@@ -19,10 +19,11 @@ class MenuSeeder extends Seeder
             ['name'=>'roles', 'href'=>'/roles', 'class'=>'', 'icon'=>'', 'slug'=>'link', 'parent_id'=>1, 'menu_type'=>'sidebar', 'sequence'=>'3'],
 
             ['name'=>'appointments', 'href'=>'/appointments', 'class'=>'has-arrow waves-effect waves-dark', 'icon'=>'fas fa-microscope', 'slug'=>'link', 'parent_id'=>null, 'menu_type'=>'sidebar', 'sequence'=>'4'],
+            ['name'=>'reservations', 'href'=>'/reservations', 'class'=>'has-arrow waves-effect waves-dark', 'icon'=>'fas fa-plus', 'slug'=>'link', 'parent_id'=>null, 'menu_type'=>'sidebar', 'sequence'=>'5'],
 
-            ['name'=>'settings', 'href'=>'/settings', 'class'=>'has-arrow waves-effect waves-dark', 'icon'=>'fa fa-cog', 'slug'=>'link', 'parent_id'=>null, 'menu_type'=>'sidebar', 'sequence'=>'5'],
+            ['name'=>'settings', 'href'=>'/settings', 'class'=>'has-arrow waves-effect waves-dark', 'icon'=>'fa fa-cog', 'slug'=>'link', 'parent_id'=>null, 'menu_type'=>'sidebar', 'sequence'=>'6'],
 
-            ['name'=>'translations', 'href'=>'/languages/fr/translations', 'class'=>'has-arrow waves-effect waves-dark','icon'=>'fa fa-language', 'slug'=>'link', 'parent_id'=>null, 'menu_type'=>'sidebar', 'sequence'=>'6'],
+            ['name'=>'translations', 'href'=>'/languages/fr/translations', 'class'=>'has-arrow waves-effect waves-dark','icon'=>'fa fa-language', 'slug'=>'link', 'parent_id'=>null, 'menu_type'=>'sidebar', 'sequence'=>'7'],
             );
         Menu::insert($menu);
 

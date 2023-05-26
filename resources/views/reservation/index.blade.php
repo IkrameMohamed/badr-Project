@@ -31,9 +31,12 @@
         </thead>
     </table>
 
-    @include('reservation.create')
-
-    @include('globalComponents.delete_modal')
+    @can('add_reservations')
+        @include('reservation.create')
+    @endcan
+    @can('delete_reservations')
+        @include('globalComponents.delete_modal')
+    @endcan
 
 @endsection
 
@@ -43,6 +46,9 @@
     @include('globalComponents.dropifyJs')
     <script >
         var permission_translation = JSON.parse(`{{readLangFle('permission' ,false)}}`.replace(/(&quot\;)/g, "\""));
+        var reservationPermission = {
+            delete_reservations: @can('delete_reservations')  true @else false @endcan,
+        }
 
     </script>
     <script src="{{asset('plugins/jquery-ui-1.12.1/jquery-ui.min.js')}}"></script>

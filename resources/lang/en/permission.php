@@ -34,4 +34,10 @@ return array(
     'add_appointments' => 'add_appointments',
     'delete_appointments' => 'delete_appointments',
     'checked_appointments' => 'checked_appointments',
+    'delete_reservations' => 'delete_reservations',
+    'add_reservations' => 'add_reservations',
+    'reservations' => 'reservations',
+
+
+
 );

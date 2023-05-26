@@ -16,13 +16,19 @@
         </button>
     @endcan
     @csrf
-
+    <style>
+        .modal-lg {
+            max-width: 80% !important;
+        }
+    </style>
     <table id="tableUsers" width="100%"
            class="table table-striped text-center table-bordered mb-0  no-wrap dataTable">
         <thead class="bg-primary text-white ">
         <tr>
             <th>#</th>
             <th>@lang('global.name')</th>
+            <th>@lang('global.last_name')</th>
+            <th>@lang('global.phone')</th>
             <th>@lang('global.email')</th>
             <th>@lang('global.created_at')</th>
             <th class="noExport all">@lang('global.action')</th>

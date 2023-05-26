@@ -6,8 +6,8 @@ use App\Appointment;
 use App\Bed;
 use App\Doctor;
 use App\Http\Middleware\EncryptCookies;
-use App\Http\Requests\AppointmentRequest\AppointmentCreate;
-use App\Http\Requests\AppointmentRequest\AppointmentDelete;
+use App\Http\Requests\ReservationRequest\ReservationCreate;
+use App\Http\Requests\ReservationRequest\ReservationDelete;
 use App\Http\Requests\AppointmentRequest\CheckedAppointment;
 use App\Medicine;
 use App\Permission;
@@ -53,7 +53,13 @@ class ReservationController extends Controller
      */
     public function index()
     {
+        if (Gate::allows('reservations') == false) {
+            redirect('/')->send();
+        }
+
         return view('reservation.index');
+
+
     }
     public function datatable(Request $request)
     {
@@ -62,7 +68,7 @@ class ReservationController extends Controller
     }
 
 
-    public function create(Request $request)
+    public function create(ReservationCreate $request)
     {
 
 
@@ -92,7 +98,7 @@ class ReservationController extends Controller
     }
 
 
-    public function delete(Request $request)
+    public function delete(ReservationDelete $request)
     {
         $reservation = Reservation::find($request->id);
         $reservation->delete();

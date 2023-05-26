@@ -21,4 +21,5 @@ return array (
   'settings' => 'Paramètres',
   'standard_report' => 'Rapport standard',
   'translations' => 'Traductions',
+    'reservations' => 'reservations',
 );

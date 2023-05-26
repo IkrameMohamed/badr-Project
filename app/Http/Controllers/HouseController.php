@@ -5,8 +5,8 @@ namespace App\Http\Controllers;
 use App\Appointment;
 use App\Doctor;
 use App\House;
-use App\Http\Requests\AppointmentRequest\AppointmentCreate;
-use App\Http\Requests\AppointmentRequest\AppointmentDelete;
+use App\Http\Requests\AppointmentRequest\ReservationCreate;
+use App\Http\Requests\AppointmentRequest\ReservationDelete;
 use App\Http\Requests\AppointmentRequest\CheckedAppointment;
 use App\Medicine;
 use App\Permission;
@@ -47,7 +47,9 @@ class HouseController extends Controller
     }
 
     public function houses(Request $request){
-        $houses = House::all();
+        $user = User::find(auth()->id());
+        $houses = House::all()->whereIn('type',[$user->type, 'ALL']);
+
         return $this->returnSuccess('user.get_houses_succesfully', $houses);
     }
 

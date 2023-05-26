@@ -25,6 +25,7 @@ Auth::routes();
  */
 Route::get('/users', 'UserController@index');
 Route::post('/users/create', 'UserController@create');
+Route::post('/users/createWithoutLogin', 'UserController@createWithoutLogin');
 Route::delete('/users/delete', 'UserController@delete');
 Route::post('/users/activate', 'UserController@activate');
 Route::post('/users/update', 'UserController@update');
@@ -33,7 +34,7 @@ Route::get('/users/lang/{local}', 'UserController@lang');
 Route::post('/users/permissions', 'UserController@permissions');
 Route::post('/users/updatePermissions', 'UserController@updatePermissions');
 Route::post('/users/refreshUserRole', 'UserController@refreshUserRole');
-
+Route::get('/register', 'UserController@registerPage');
 
 /**
  * +-------------------------
