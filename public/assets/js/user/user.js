@@ -180,9 +180,9 @@ function getRolesOption(selector, field_selected = false) {
 function getType(selector, field_selected = false) {
     let  opt = '', lastField;
 
-    opt += `<option  value="MEN">MEN</option>`;
-    opt += `<option  value="WOMEN">WOMEN</option>`;
-    lastField = 'MEN';
+    opt += `<option  value="MEN">HOMME</option>`;
+    opt += `<option  value="WOMEN">FEMME</option>`;
+    lastField = 'HOMME';
 
     selector.find("[name='type']").html(opt).selectpicker('refresh');
     selector.find("[name='type']").selectpicker('val', (field_selected) ? field_selected : lastField);
