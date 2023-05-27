@@ -146,3 +146,21 @@ Route::post('/beds/beds_available', 'BedController@beds_available');
 Route::post('/reservations/create', 'ReservationController@create');
 //Route::post('/appointments/checkedAppointment', 'AppointmentController@checkedAppointment');
 
+
+
+
+
+
+
+
+
+
+
+Route::get('/product', [App\Http\Controllers\productController::class, 'index']);
+Route::get('/chaise', [App\Http\Controllers\productController::class, 'chaise']);
+Route::get('/med', [App\Http\Controllers\productController::class, 'med']);
+Route::get('/equipement', [App\Http\Controllers\productController::class, 'equipement']);
+Route::get('/popup/{id}', [App\Http\Controllers\productController::class, 'popup']);
+
+Route::post('/achatCreate',[App\Http\Controllers\AchatController::class ,'store'])->name('achatCreate');
+

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Calque_1" x="0px" y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:url(#SVGID_2_);}
+	.st2{fill:url(#SVGID_3_);}
+	.st3{fill:url(#SVGID_4_);}
+	.st4{fill:url(#SVGID_5_);}
+	.st5{clip-path:url(#SVGID_7_);fill:url(#SVGID_8_);}
+	.st6{fill:url(#SVGID_9_);}
+	.st7{fill:url(#SVGID_10_);}
+	.st8{fill:url(#SVGID_11_);}
+	.st9{fill:url(#SVGID_12_);}
+	.st10{fill:#010101;}
+	.st11{fill:url(#SVGID_13_);}
+	.st12{fill:url(#SVGID_14_);}
+</style>
+<g>
+	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="3.1618" y1="20" x2="36.8382" y2="20">
+		<stop offset="0" style="stop-color:#F15B27"></stop>
+		<stop offset="1" style="stop-color:#F79421"></stop>
+	</linearGradient>
+	<path class="st0" d="M33.88,6.19H14.01c-1.63,0-2.96,1.33-2.96,2.96v0.99h-0.99c-1.63,0-2.96,1.33-2.96,2.96v0.99H6.12   c-1.64,0-2.96,1.33-2.96,2.96v13.81c0,1.63,1.33,2.96,2.96,2.96h19.73c1.63,0,2.96-1.32,2.96-2.96v-0.99h1.12   c1.63,0,2.96-1.33,2.96-2.96v-0.99h0.99c1.63,0,2.96-1.33,2.96-2.96V9.15C36.84,7.52,35.51,6.19,33.88,6.19L33.88,6.19z    M25.35,16.05l-8.66,8.74c-0.39,0.39-1.02,0.39-1.4,0l-8.66-8.74H25.35z M5.14,30.44V17.35l6.51,6.58L5.14,30.44z M6.53,31.84   l6.51-6.51l0.85,0.85c1.16,1.17,3.05,1.17,4.21,0l0.85-0.85l6.51,6.51H6.53z M26.84,30.44l-6.51-6.51l6.51-6.58V30.44z    M30.92,26.91c0,0.54-0.44,0.99-0.99,0.99h-1.12V17.04c0-1.63-1.32-2.96-2.96-2.96H9.08v-0.99c0-0.54,0.44-0.99,0.99-0.99h19.86   c0.54,0,0.99,0.44,0.99,0.99V26.91z M34.86,22.96c0,0.54-0.44,0.99-0.99,0.99h-0.99V13.09c0-1.63-1.33-2.96-2.96-2.96h-16.9V9.15   c0-0.54,0.44-0.99,0.99-0.99h19.86c0.54,0,0.99,0.44,0.99,0.99V22.96z M34.86,22.96"></path>
+</g>
+</svg>

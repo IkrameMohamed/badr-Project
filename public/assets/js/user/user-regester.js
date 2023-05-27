@@ -17,8 +17,8 @@ $("#formCreateUser").on('submit', function (e) {
 function getType(selector, field_selected = false) {
     let  opt = '', lastField;
 
-    opt += `<option  value="MEN">MEN</option>`;
-    opt += `<option  value="WOMEN">WOMEN</option>`;
+    opt += `<option  value="MEN">Homme</option>`;
+    opt += `<option  value="WOMEN">Femme</option>`;
     lastField = 'MEN';
 
     selector.find("[name='type']").html(opt).selectpicker('refresh');

@@ -1,5 +1,6 @@
 <?php
 
+use Database\Seeders\ProductSeeder;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -22,5 +23,6 @@ class DatabaseSeeder extends Seeder
         $this->call(DoctorVisitTypeTableSeeder::class);
         $this->call(HousesTableSeeder::class);
         $this->call(BedsTableSeeder::class);
+        $this->call(ProductSeeder::class);
     }
 }

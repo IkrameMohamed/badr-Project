@@ -31,12 +31,13 @@ class PermissionSeeder extends Seeder
         Permission::create(['name'  => 'add_reservations','permission_menu_id'=>'5']);
         Permission::create(['name'  => 'delete_reservations','permission_menu_id'=>'5']);
         /* end manage_forms  */
+        Permission::create(['name'  => 'product','permission_menu_id'=>'6']);
         /* start manage_settings  */
-        Permission::create(['name'  => 'settings','permission_menu_id'=>'6']);
-        Permission::create(['name'  => 'update_settings','permission_menu_id'=>'6']);
+        Permission::create(['name'  => 'settings','permission_menu_id'=>'7']);
+        Permission::create(['name'  => 'update_settings','permission_menu_id'=>'7']);
         /* end manage_settings  */
 
-        Permission::create(['name'  => 'translations','permission_menu_id'=>'7']);
+        Permission::create(['name'  => 'translations','permission_menu_id'=>'8']);
 
     }
 }

@@ -22,4 +22,5 @@ return array (
   'standard_report' => 'Rapport standard',
   'translations' => 'Traductions',
     'reservations' => 'reservations',
+    'product'=>'produit'
 );

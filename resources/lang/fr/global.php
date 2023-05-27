@@ -74,4 +74,11 @@ return array (
   'view' => 'Voir',
   'visit_type' => 'type_visite',
     "doctor"=> "médecin",
+   'start_date'=>'date de debut',
+    'end_date'=>'date de fin',
+    'house'=>'maison',
+    'last_name'=>'prenom',
+    'phone'=> 'num_tel',
+
+
 );
