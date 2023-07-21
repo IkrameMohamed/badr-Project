@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Calque_1" x="0px" y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:url(#SVGID_2_);}
+	.st2{fill:url(#SVGID_3_);}
+	.st3{fill:url(#SVGID_4_);}
+	.st4{fill:url(#SVGID_5_);}
+	.st5{clip-path:url(#SVGID_7_);fill:url(#SVGID_8_);}
+	.st6{fill:url(#SVGID_9_);}
+	.st7{fill:url(#SVGID_10_);}
+	.st8{fill:url(#SVGID_11_);}
+	.st9{fill:url(#SVGID_12_);}
+	.st10{fill:#010101;}
+	.st11{fill:url(#SVGID_13_);}
+	.st12{fill:url(#SVGID_14_);}
+</style>
+<g>
+	<g>
+		<g>
+			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="7.1679" y1="20" x2="32.8321" y2="20">
+				<stop offset="0" style="stop-color:#F15B27"></stop>
+				<stop offset="1" style="stop-color:#F79421"></stop>
+			</linearGradient>
+			<path class="st0" d="M20,1.75c-7.08,0-12.83,5.76-12.83,12.83c0,2.39,0.66,4.72,1.92,6.75l10.19,16.41     c0.2,0.31,0.54,0.51,0.91,0.51c0,0,0.01,0,0.01,0c0.37,0,0.72-0.2,0.91-0.52l9.93-16.57c1.18-1.98,1.81-4.25,1.81-6.57     C32.83,7.51,27.08,1.75,20,1.75z M29.19,20.06l-9.02,15.07L10.9,20.2c-1.04-1.68-1.61-3.63-1.61-5.62     C9.29,8.69,14.1,3.87,20,3.87s10.7,4.81,10.7,10.71C30.7,16.52,30.17,18.41,29.19,20.06z"></path>
+		</g>
+	</g>
+	<g>
+		<g>
+			<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="13.5839" y1="14.582" x2="26.4161" y2="14.582">
+				<stop offset="0" style="stop-color:#F15B27"></stop>
+				<stop offset="1" style="stop-color:#F79421"></stop>
+			</linearGradient>
+			<path class="st1" d="M20,8.17c-3.54,0-6.42,2.88-6.42,6.42C13.58,18.1,16.42,21,20,21c3.63,0,6.42-2.94,6.42-6.42     C26.42,11.04,23.54,8.17,20,8.17z M20,18.87c-2.37,0-4.29-1.93-4.29-4.29c0-2.36,1.93-4.29,4.29-4.29s4.28,1.93,4.28,4.29     C24.28,16.91,22.41,18.87,20,18.87z"></path>
+		</g>
+	</g>
+</g>
+</svg>

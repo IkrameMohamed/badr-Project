@@ -47,7 +47,7 @@ class AchatController extends Controller
         $achat = new Achat();
         $achat->user_id = $user_id;
         $achat->product_id = $request->product_id;
-        $achat->ordonnance = $base64;
+        $achat->ordonnance = $imageData;
         $achat->save();
 
         return redirect('/')->with('success', 'Image uploaded successfully.');

@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="{{asset('plugins/jquery-ui-1.12.1/fixe_modal.css')}}">
     <link rel="stylesheet" href="{{asset('plugins/dropify/dist/css/dropify.min.css')}}">
 @endsection
+
 @section('content')
     @csrf
+    <h style="font-size: 40px; margin-left: 600px;">Rendez-Vous</h> <br>
     <button type="button" class="btn btn-info  mb-1 CreatAppointmentBtn" data-toggle="modal" data-target="#CreatAppointment">
         <i class="fa fa-plus"></i> @lang('appointment.create_appointment')
     </button>

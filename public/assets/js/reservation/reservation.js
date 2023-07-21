@@ -3,7 +3,9 @@ let dataTableReservation,
     data_list_reservations  = {
         "_token": $('[name="_token"]').val()
     },
-    beds_size = 0 ;
+    beds_size = 0 ,
+    user_handicap= 0 ,
+    user_under_age = 0;
 
 
 $(document).ready(function () {
@@ -115,12 +117,18 @@ function dataValidation(selector){
     dateValidation(selector,false);
     if (dateValidation(selector,false) == false)
         return false ;
-
     let beds_number = selector.find("[name='beds_number']").val();
+    if (beds_number ==  2 && user_under_age == 0 && user_handicap == 0){
+        showNotification('error', "vous ne pouvez choisir qu'un seul lit car le patient n'est ni mineur ni handicapé");
+        return false ;
+    }
+
     if (beds_number > 2){
         showNotification('error', "Le nombre de lit doit etre inferieur ou egal a 2");
         return false ;
     }
+
+
 
     if (beds_number > beds_size){
         showNotification('error', "Le nombre de lit dans ce maison et insuffisant ");
@@ -139,9 +147,11 @@ function getHouses(selector, field_selected = false) {
     let route = '/houses';
     sendPost(route, {}).then((response) => {
         if (response.STATUS === "SUCCESS") {
-            houses = response.DATA;
-            let data = response.DATA, opt = '', lastField;
-            $.each(data, function (index, house) {
+            houses = response.DATA.houses;
+            user_handicap = response.DATA.user_handicap;
+            user_under_age = response.DATA.user_under_age;
+            let  opt = '', lastField;
+            $.each(houses, function (index, house) {
                 opt += `<option  value="${house['id']}">${house['name']}</option>`;
                 lastField = house['id'];
             });

@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'HomeController@index');
+
 
 Auth::routes();
 
@@ -164,3 +164,26 @@ Route::get('/popup/{id}', [App\Http\Controllers\productController::class, 'popup
 
 Route::post('/achatCreate',[App\Http\Controllers\AchatController::class ,'store'])->name('achatCreate');
 
+
+
+
+
+Route::get('/list_demande', [App\Http\Controllers\ProController::class, 'list_demande']);
+Route::get('/list_product', [App\Http\Controllers\ProController::class, 'index']);
+Route::get('edit/{id}', [App\Http\Controllers\ProController::class, 'edit']);
+Route::put('updatedata/{id}','ProController@update');
+Route::get('delete/{id}','ProController@remouve');
+Route::get('/add_product','DonController@index');
+Route::post('/don/store','DonController@store')->name("don.store");
+Route::get('/event', function () {return view('event');});
+Route::get('/contact', function () {return view('contact');});
+
+
+
+Route::get('/', function () { return view('badr');});
+
+Route::resource('/addtype',AddTypeController::class);
+Route::get('edite/{id}',[App\Http\Controllers\TypeController::class,'edite']);
+Route::get('delete/{id}','TypeController@remouve');
+Route::put('updatedata/{id}','TypeController@update');
+Route::get('/type',[App\Http\Controllers\TypeController::class,'index']);

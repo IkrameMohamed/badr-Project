@@ -16,7 +16,7 @@ $lang = lang()
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="{{asset('images/logobadr.svg')}}" />
+    <link rel="icon" href='image/logobadr.svg' />
     <title>@yield('title')</title>
 
     @yield('cssPlugins')

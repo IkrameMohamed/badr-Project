@@ -6,7 +6,7 @@
     <style>
         body{
 
-            background-color: #B2D2A4  ;
+            background-color: #7b96b3  ;
         }
         .conta{
             width: 80%;
@@ -67,7 +67,7 @@
             -Afin d'obtenir ce produit, nous vous prions de nous fournir une ordonnance indiquant votre besoin</p>
 
         <input type="file" name="image"><br><br>
-        <p>-Selon nos conditions, nous demandons que le produit soit retourné après que vous en avez fini de l'utiliser.</p>
+        <p>-Selon nos conditions, nous demandons que le produit soit retourné après que vous en avez fini de l'utiliser (sauf les medicaments ).</p>
 
         <div class="mycheckbox">
             <input type="checkbox" name="accept_terms" value="yes">

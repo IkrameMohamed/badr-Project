@@ -5,7 +5,7 @@ return array (
   'all_forms' => 'Toutes les templates',
   'all_receipts' => 'Tous les formulaires',
   'all_users' => 'Toutes les utilisateurs',
-  'appointments' => 'appointments',
+
   'audits' => 'Audits ',
   'dashboard' => 'Tableau de bord',
   'manage_customers' => 'Gérer les clients',
@@ -21,6 +21,14 @@ return array (
   'settings' => 'Paramètres',
   'standard_report' => 'Rapport standard',
   'translations' => 'Traductions',
-    'reservations' => 'reservations',
-    'product'=>'produit'
+    'reservations' => 'Hebergement',
+    'product'=>'dons',
+    'appointments'=>'Rendz-vous',
+    'add_product'=>'ajouter produit',
+    'list_demande'=>'list demande',
+    'list_product'=>'list produit',
+    'list_type'=>'liste type',
+    'add_type'=>'ajouter type'
+
+
 );

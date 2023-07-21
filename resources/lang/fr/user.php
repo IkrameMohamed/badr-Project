@@ -20,4 +20,10 @@ return array (
   'user' => 'Utilisateur',
   'users' => 'Utilisateurs',
   'view_user' => 'Voir l\'utilisateur',
+    'lastName'=>"prénom",
+    'phone'=>"num_tel",
+    'create_appointment'=>'crée un rendez-vous',
+    'create_reservation'=>'crée un reservation'
+
+
 );

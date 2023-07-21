@@ -25,10 +25,12 @@ class UserCreateWithoutLogin extends globalRequest
     public function rules()
     {
         return [
-            'UserName'         => 'required|string|min:3|unique:users,name,NULL,id,deleted_at,NULL',
-            'UserEmail'        => 'required|email|unique:users,email,NUll',
-            'type'           => 'required',
-            'UserPassword'=>'required',
+            'UserName' => 'required|string|min:3|unique:users,name,NULL,id,deleted_at,NULL',
+            'UserEmail' => 'required|email|unique:users,email,NUll',
+            'type' => 'required',
+            'UserPassword' => 'required',
+            'under_age' => 'required|in:1,0',
+            'handicap' => 'required|in:1,0',
         ];
     }
 

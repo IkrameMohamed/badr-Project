@@ -14,4 +14,12 @@ class Achat extends Model
         'product_id',
         'ordonnance'
     ];
+
+    public function user(){
+        return $this::belongsTo('App\User');
+    }
+
+    public function product(){
+        return $this::belongsTo('App\Product');
+    }
 }

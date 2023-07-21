@@ -32,12 +32,24 @@ class PermissionSeeder extends Seeder
         Permission::create(['name'  => 'delete_reservations','permission_menu_id'=>'5']);
         /* end manage_forms  */
         Permission::create(['name'  => 'product','permission_menu_id'=>'6']);
+        /* end manage_forms  */
+        Permission::create(['name'  => 'add_product','permission_menu_id'=>'7']);
         /* start manage_settings  */
-        Permission::create(['name'  => 'settings','permission_menu_id'=>'7']);
-        Permission::create(['name'  => 'update_settings','permission_menu_id'=>'7']);
+        Permission::create(['name'  => 'list_demande','permission_menu_id'=>'8']);
+        /* start manage_settings  */
+        Permission::create(['name'  => 'list_product','permission_menu_id'=>'9']);
+        /* start manage_settings  */
+
+        Permission::create(['name'  => 'list_type','permission_menu_id'=>'10']);
+        Permission::create(['name'  => 'add_type','permission_menu_id'=>'11']);
+
+
+
+        Permission::create(['name'  => 'settings','permission_menu_id'=>'12']);
+        Permission::create(['name'  => 'update_settings','permission_menu_id'=>'12']);
         /* end manage_settings  */
 
-        Permission::create(['name'  => 'translations','permission_menu_id'=>'8']);
+        Permission::create(['name'  => 'translations','permission_menu_id'=>'13']);
 
     }
 }

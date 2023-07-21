@@ -15,8 +15,8 @@
 
 
                     <div class="form-group row">
-                        <label class="col-sm-3 control-label col-form-label">@lang('global.name')</label>
-                        <div class="col-sm-9">
+                        <label class="col-sm-4 control-label col-form-label">@lang('global.name')</label>
+                        <div class="col-sm-8">
                             <input type="text" name="UserName" class="form-control" data-parsley-required
                                    placeholder="@lang('user.enter_user_name')">
                         </div>
@@ -39,21 +39,21 @@
                     </div>
 
                     <div class="form-group row">
-                        <label class="col-sm-3 control-label col-form-label">@lang('global.email')</label>
-                        <div class="col-sm-9">
+                        <label class="col-sm-4 control-label col-form-label">@lang('global.email')</label>
+                        <div class="col-sm-8">
                             <input type="email" name="UserEmail" class="form-control" data-parsley-required
                                    placeholder="@lang('user.enter_user_email')">
                         </div>
                     </div>
                     <div class="form-group row ">
-                        <label class="col-sm-3 control-label col-form-label">@lang('global.table')</label>
-                        <div class="col-sm-9">
+                        <label class="col-sm-4 control-label col-form-label">@lang('global.table')</label>
+                        <div class="col-sm-8">
                             <select class="selectpicker show-tick" data-live-search="true" name="allRoles" data-parsley-required ></select>
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-sm-3 control-label col-form-label">@lang('global.status')</label>
-                        <div class="col-sm-9">
+                        <label class="col-sm-4 control-label col-form-label">@lang('global.status')</label>
+                        <div class="col-sm-8">
                             <label class="switch">
                                 <input type="checkbox" name="UserActive" checked/>
                                 <div class="slider"></div>
@@ -66,6 +66,26 @@
                             <select class="selectpicker show-tick" data-live-search="true" name="type" data-parsley-required >
 
                             </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-4 control-label col-form-label">moins de 18 ans ?</label>
+                        <div class="col-sm-8">
+                            <label class="switch">
+                                <input type="checkbox" name="under_age" checked/>
+                                <div class="slider"></div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-4 control-label col-form-label">besoin de garde malade?</label>
+                        <div class="col-sm-8">
+                            <label class="switch">
+                                <input type="checkbox" name="handicap" />
+                                <div class="slider"></div>
+                            </label>
                         </div>
                     </div>
                     <div class="form-group mb-4 dropUserImage">

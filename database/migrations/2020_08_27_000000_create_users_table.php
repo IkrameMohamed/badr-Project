@@ -20,6 +20,8 @@ class CreateUsersTable extends Migration
             $table->string('phone');
             $table->string('email')->unique();
             $table->boolean('active')->default(1);
+            $table->boolean('under_age')->default(1);
+            $table->boolean('handicap')->default(0);
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->enum('lang',['en','fr','ar'])->default('fr');

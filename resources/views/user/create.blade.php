@@ -66,6 +66,28 @@
                         </select>
                     </div>
                 </div>
+
+
+                <div class="form-group row">
+                    <label class="col-sm-4 control-label col-form-label">moins de 18 ans ?</label>
+                    <div class="col-sm-8">
+                        <label class="switch">
+                            <input type="checkbox" name="under_age" checked/>
+                            <div class="slider"></div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-sm-4 control-label col-form-label">besoin de garde malade?</label>
+                    <div class="col-sm-8">
+                        <label class="switch">
+                            <input type="checkbox" name="handicap" />
+                            <div class="slider"></div>
+                        </label>
+                    </div>
+                </div>
+
                 <div class="form-group row">
                     <label class="col-sm-4 control-label col-form-label">@lang('global.password')</label>
                     <div class="col-sm-8">

@@ -79,6 +79,8 @@ return array (
     'house'=>'maison',
     'last_name'=>'prenom',
     'phone'=> 'num_tel',
+   'Create Reservation'=>'cree un reservation',
+    'numbers_of_beds'=>'nombre de lit'
 
 
 );

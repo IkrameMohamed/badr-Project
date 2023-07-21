@@ -3,7 +3,7 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">@lang('user.create_user')</h5>
+                <h5 class="modal-title" id="exampleModalLongTitle">@lang('user.create_reservation')</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -41,7 +41,7 @@
                     <div class="form-group row max_beds_by_house" style="display: none">
                         <label class="col-sm-4 control-label col-form-label"> </label>
                         <div class="col-sm-8">
-                            <span class="max_beds"> ddd</span>
+                            <span class="max_beds"> </span>
                         </div>
                     </div>
 
@@ -49,7 +49,7 @@
                 <div class="form-group row beds_numbers" style="display: none" >
                         <label class="col-sm-4 control-label col-form-label">@lang('global.numbers_of_beds')</label>
                         <div class="col-sm-8">
-                            <input type="text" name="beds_number" class="form-control" data-parsley-required
+                            <input type="text" name="beds_number" class="form-control" data-parsley-required value="1"
                                    placeholder="@lang('user.numbers_of_beds')">
                         </div>
                 </div>

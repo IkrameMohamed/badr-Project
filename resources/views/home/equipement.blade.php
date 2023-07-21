@@ -68,8 +68,9 @@
                 <div id="mySidenav" class="sidenav">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                     <a href={{url('product')}}>Accueil</a>
-                    <a href={{url('med')}}>Les Médicament</a>
-                    <a href={{url('chaise')}}>les chaises roulantes</a>
+                    <a href={{url('/users')}}>Mon Compte </a>
+                    <a href={{url('med')}}>Médicaments</a>
+                    <a href={{url('chaise')}}>Usage Medical</a>
                     <a href={{url('equipement')}}>Les Equipements Médicaux</a>
                 </div>
                 <span class="toggle_icon" onclick="openNav()"><img src={{asset('extrat/images/toggle-icon.png')}}></span>
@@ -81,12 +82,7 @@
                 <div class="main">
                     <!-- Another variation with a button -->
                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Rechercher">
-                        <div class="input-group-append">
-                            <button class="btn btn-secondary" type="button" style="background-color: #f26522; border-color:#f26522 ">
-                                <i class="fa fa-search"></i>
-                            </button>
-                        </div>
+
                     </div>
                 </div>
 
@@ -144,7 +140,7 @@
 
               $iteration = 0 ;
         @endphp
-        @foreach (array_chunk($newProductsList, 9) as $productListOfThree)
+        @foreach (array_chunk($newProductsList, 20) as $productListOfThree)
             <div class="carousel-item {{ $iteration == 0 ? 'active' : '' }}">
                 <div class="container">
                     <h1 class="fashion_taital" style=" color: #fd7e14;">Les Equipements Médicaux</h1>

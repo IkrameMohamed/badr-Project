@@ -32,6 +32,8 @@ $(document).ready(function () {
         form.find("[name='UserEmail']").val(data.email);
         form.find("[name='lastName']").val(data.last_name);
         form.find("[name='phone']").val(data.phone);
+        form.find("[name='under_age']").prop("checked", data.under_age);
+        form.find("[name='handicap']").prop("checked", data.handicap);
         form.find('[name="UserActive"]').prop("checked", data.active);
         $('#modalViewUser').modal('show');
     });
@@ -64,6 +66,8 @@ $(document).ready(function () {
         form.find("[name='UserEmail']").val(data.email);
         form.find("[name='lastName']").val(data.last_name);
         form.find("[name='phone']").val(data.phone);
+        form.find("[name='under_age']").prop("checked", data.under_age);
+        form.find("[name='handicap']").prop("checked", data.handicap);
         $('#modalUpdateUser').modal('show');
     });
 

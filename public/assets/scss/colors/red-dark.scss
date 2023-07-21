@@ -21,7 +21,7 @@ $topbar-alt: #272c33;
 
 .topbar {
     background: $topbar;
-    
+
     .top-navbar .navbar-header .navbar-brand .dark-logo{
         display: none;
     }
@@ -150,7 +150,7 @@ a.link {
 .mini-sidebar .sidebar-nav #sidebarnav>li>ul{
         background: $sidebar-dark;
     }
-}    
+}
 .sidebar-nav {
     background: $sidebar;
 }
@@ -162,14 +162,14 @@ a.link {
 }
 
 .label-themecolor{
-    background:$themecolor; 
+    background:$themecolor;
 }
 
 .sidebar-nav>ul>li.active>a {
     color: $themecolor;
     border-color: $themecolor;
     i {
-       color: $themecolor; 
+       color: $themecolor;
     }
 }
 
@@ -179,7 +179,7 @@ a.link {
       color: $themecolor;
       i {
         color: $themecolor;
-      }    
+      }
     }
 }
 .sidebar-nav ul li.nav-small-cap {

@@ -49,8 +49,12 @@ class HouseController extends Controller
     public function houses(Request $request){
         $user = User::find(auth()->id());
         $houses = House::all()->whereIn('type',[$user->type, 'ALL']);
-
-        return $this->returnSuccess('user.get_houses_succesfully', $houses);
+        $data = [
+            'houses' => $houses,
+            'user_under_age' => $user->under_age,
+            'user_handicap' => $user->handicap,
+        ];
+        return $this->returnSuccess('user.get_houses_succesfully', $data);
     }
 
 

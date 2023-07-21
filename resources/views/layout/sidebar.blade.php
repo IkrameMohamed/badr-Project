@@ -5,7 +5,7 @@
         <!-- Sidebar - Brand -->
         <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{url('/')}}">
 
-            <img src="{{asset('images/settings/logo-sidebar.png')}}" style=" max-width: 45px;max-height: 45px;">
+            <img src='image/logobadr.svg' style=" max-width: 45px;max-height: 45px;">
             <div class="sidebar-brand-text mx-3">
                 {{settings('company_name')}}
             </div>

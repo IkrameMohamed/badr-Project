@@ -9,7 +9,7 @@
 @endsection
 @section('content')
 
-
+    <h style="font-size: 40px; margin-left: 600px;">Les Utilisateur</h> <br>
     @can(['add_users'])
         <button type="button" class="btn btn-info  mb-1 CreatUserBtn" data-toggle="modal" data-target="#CreatUser">
             <i class="fa fa-plus"></i> @lang('user.create_user')

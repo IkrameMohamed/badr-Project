@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="{{asset('images/logobadr.svg')}}" />
+    <link rel="icon" href='image/logobadr.svg' />
     <link rel="stylesheet" href="{{asset('plugins/dropify/dist/css/dropify.min.css')}}">
 
 
@@ -26,7 +26,7 @@
 
 
 
-    <title>Sign Up</title>
+    <title>S'inscrire</title>
     <style>
 
         body {
@@ -36,7 +36,7 @@
             align-items: center;
         }
         .container {
-            background-color: #B2D2A4 ;
+            background-color: #7b96b3;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
@@ -62,6 +62,7 @@
         label {
             display: block;
             margin-bottom: 10px;
+            color: black;
         }
 
         input[type="text"],
@@ -93,14 +94,18 @@
 </head>
 <body>
 <div class="container">
-    <h1>Sign Up</h1>
+    <h1>S'inscrire</h1>
     {!! Form::open(array('url' => '/users/createWithoutLogin', 'method' => 'post' ,'class' => 'form-horizontal',
                                  'id'=>'formCreateUser','files'=> true ))!!}
 
         <div class="form-group">
+            <label for="Dossier_med">Dossier Medical</label>
             <input type="file" name="UserImage" class="dropify"
-                   data-height="100">
+                   data-height="100" placeholder="Dossier Medical ">
         </div>
+
+
+
         <div class="form-group">
             <label for="nom">Nom</label>
             <input type="text" name="UserName" class="form-control" data-parsley-required
@@ -125,7 +130,6 @@
                    placeholder="@lang('user.enter_user_email')">
 
         </div>
-
 
 
     <div class="form-group ">
@@ -153,7 +157,24 @@
 
     </div>
 
-        <input type="submit" value="Sign Up">
+    <div class="form-group">
+        <label for="age">Avez-vous moins de 18 ans ?</label>
+
+            <label><input type="radio"  name="under_age" value="1" checked >Oui</label>
+            <label><input type="radio" name="under_age" value="0"  >Non</label>
+
+    </div>
+
+    <div class="form-group" >
+        <label for="disability">Avez-vous un handicap ou besoin de garde malade?</label>
+            <label><input type="radio" name="handicap" value="1"  >Oui</label>
+            <label><input type="radio" name="handicap" value="0" checked>Non</label>
+
+    </div>
+
+
+    <input type="submit" value="S'inscrire">
+
     {!! Form::close() !!}
 </div>
 </body>

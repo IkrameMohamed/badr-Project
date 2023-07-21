@@ -44,10 +44,10 @@ class UserController extends Controller
     public function index()
     {
         if (Gate::allows('all_users') == false) {
-            redirect('/')->send();
+            redirect('/appointments')->send();
         }
 
-        return view('user.index');
+       else return view('user.index');
     }
 
     public function registerPage()
@@ -68,6 +68,8 @@ class UserController extends Controller
         $user->email = $request->UserEmail;
         $user->last_name = $request->lastName;
         $user->type = $request->type;
+        $user->under_age = $request->under_age;
+        $user->handicap = $request->handicap;
         $user->phone = $request->phone;
         $user->password = \Hash::make($request->UserPassword);
         $user->active = 0;
@@ -100,6 +102,8 @@ class UserController extends Controller
         $user->last_name = $request->lastName;
         $user->type = $request->type;
         $user->phone = $request->phone;
+        $user->under_age =  ($request->under_age) ? 1 : 0;
+        $user->handicap =($request->handicap) ? 1 : 0;
         $user->password = \Hash::make($request->UserPassword);
         $user->role_id = $request->allRoles;
         $user->save();
@@ -171,6 +175,8 @@ class UserController extends Controller
         $user->last_name = $request->lastName;
         $user->type = $request->type;
         $user->phone = $request->phone;
+        $user->under_age =  ($request->under_age) ? 1 : 0;
+        $user->handicap =($request->handicap) ? 1 : 0;
         //admin and sysadmin always active
         $user->active = ($request->UserActive || in_array($user->id, [1, 2])) ? 1 : 0;
         //disconnect inactive users except connected user

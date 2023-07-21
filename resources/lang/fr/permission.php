@@ -34,4 +34,13 @@ return array (
   'update_users_permissions' => 'Mettre à jour les autorisations des utilisateurs',
   'update_users_roles' => 'Mettre à jour les rôles des utilisateurs',
   'view_permissions' => 'Voir les autorisations',
+    'add_product'=>'ajouter produit',
+    'list_demande'=>'list demande',
+    'list_product'=>'list produit',
+    'product'=>'demande produit',
+    'list_type'=>'list type',
+    'add_type'=>'ajouter type',
+
+
+
 );

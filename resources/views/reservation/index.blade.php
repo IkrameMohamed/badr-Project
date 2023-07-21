@@ -11,6 +11,7 @@
 @endsection
 @section('content')
     @csrf
+    <h style="font-size: 40px; margin-left: 600px;">Hebergement</h> <br>
     <button type="button" class="btn btn-info  mb-1 CreatReservationBtn" data-toggle="modal" data-target="#CreatReservation">
         <i class="fa fa-plus"></i> @lang('reservation.create_reservation')
     </button>
